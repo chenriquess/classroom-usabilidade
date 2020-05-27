@@ -7,7 +7,7 @@
   height: 100%;
 
   background: #FFFFFF;
-  transition: width 0.5s ;
+  transition: width 0.5s;
 
   &:hover {
     width: 250px;
@@ -18,30 +18,54 @@
     margin-bottom: 200px;
 
     img {
-      height: 70px;
+      height: 60px;
     }
   }
 
   .disciplinas {
-    padding-left: 18px;
+    width: 100%;
 
     ul {
       list-style: none;
       padding: 0;
 
       li {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         white-space: nowrap;
+
+
+        .hover-bg {
+          border-radius: 0 2rem 2rem 0;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          z-index: -1;
+        }
+        &:hover {
+          .hover-bg {
+            background-color: rgba(32,33,36,0.039);
+          }
+        }
 
         a {
           text-decoration: none;
           color: #3c4043;
+
+          .fa-book {
+            font-size: 40px;
+          }
+
+          .disciplina-titulo {
+            letter-spacing: .01785714em;
+            font-weight: 500;
+            line-height: 1.25rem;
+            text-transform: uppercase;
+            color: #3c4043;
+          }
         }
 
-        img {
-          height: 45px;
-          margin-right: 10px;
-        }
+
       }
     }
   }

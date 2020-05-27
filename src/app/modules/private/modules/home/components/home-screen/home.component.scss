@@ -1,23 +1,34 @@
-.card-logo {
-  height: 100px;
+.card-left-col {
   overflow: hidden;
+  width: 400px;
+
+  .cover {
+    height: 100px;
+    overflow: hidden;
+  }
 }
 
-.card > img {
-  width: 100%;
+.cover > img {
+  width: 135%;
+  border-radius: 10px 0 0 0;
 }
 
 .card {
-  width: 450px;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
   margin: 20px;
   float: left;
-  height: 340px;
+  height: 250px;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .bookmark {
   position: absolute;
   right: 20px;
-  border-left-color: #00ffc4;
-  border-right-color: #00ffc4;
+  border-left: 10px solid #17987a;
+  border-right: 10px solid #17987a;
+  width: 20px;
+  height: 35px;
 }

@@ -5,29 +5,21 @@
 
     <div class="disciplinas">
         <ul>
-            <li>
-                <a href="">
-                    <img src="../../../../assets/images/book.png"/>
-                    ABC
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="../../../../assets/images/book.png"/>
-                    ABC
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="../../../../assets/images/book.png"/>
-                    ABC
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="../../../../assets/images/book.png"/>
-                    ABC
-                </a>
+            <li *ngFor="let disciplina of disciplinas">
+                <div class="hover-bg">
+                    <a [routerLink]="disciplina.link" routerLinkActive="active" class="align-middle"
+                       #currentLink="routerLinkActive">
+                        {{currentLink.isActive}}
+                        <ng-container *ngIf="currentLink.isActive; else bookClosed">
+                            <i class="fas fa-book-open mr-4" [style]="'color:' + disciplina.cor"></i>
+                        </ng-container>
+                        <ng-container #bookClosed>
+                            <i class="fa fa-book mr-4" [style]="'color:' + disciplina.cor"></i>
+                        </ng-container>
+
+                        <span class="disciplina-titulo align-top">{{disciplina.nome}}</span>
+                    </a>
+                </div>
             </li>
         </ul>
     </div>
