@@ -1,14 +1,18 @@
-.box-outter {
+.login-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: -webkit-fill-available;
 
+  .box-container {
+    box-shadow: 1px 1px 14px 1px #ccc;
+    display: flex;
+  }
+
   .box {
     width: 500px;
     height: 500px;
-    box-shadow: 1px 1px 14px 1px #ccc;
     padding: 40px;
 
     form {

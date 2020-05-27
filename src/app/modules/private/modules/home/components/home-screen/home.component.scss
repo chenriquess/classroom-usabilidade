@@ -1,0 +1,23 @@
+.card-logo {
+  height: 100px;
+  overflow: hidden;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card {
+  width: 450px;
+  margin: 20px;
+  float: left;
+  height: 340px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark {
+  position: absolute;
+  right: 20px;
+  border-left-color: #00ffc4;
+  border-right-color: #00ffc4;
+}

@@ -6,7 +6,13 @@ import { PrivateComponent } from './private.component';
 const routes: Routes = [
   {
     path: 'private',
-    component: PrivateComponent
+    component: PrivateComponent,
+    children: [
+      {
+        path: 'home',
+        loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
+      }
+    ]
   }
 ];
 

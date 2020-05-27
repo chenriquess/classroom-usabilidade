@@ -1,43 +1,53 @@
-<div class="box-outter">
-    <div class="box">
-        <div class="text-center mb-4">
-            <h2>Login</h2>
+<div class="login-container">
+    <div class="box-container">
+        <div class="box-logo">
+            <img src="../../../../../../../assets/images/rede_social.jpg" height="548" width="626"/>
         </div>
-        <div class="fast-login">
-            <button class="loginBtn loginBtn--facebook">
-                Login with Facebook
-            </button>
 
-            <button class="loginBtn loginBtn--google">
-                Login with Google
-            </button>
-        </div>
-        <hr>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Endereço de Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+        <div class="box">
+            <div class="text-center mb-4">
+                <h2>Login</h2>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
+            <div class="fast-login">
+                <button class="loginBtn loginBtn--facebook">
+                    Login with Facebook
+                </button>
 
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                <button class="loginBtn loginBtn--google">
+                    Login with Google
+                </button>
+            </div>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Endereço de Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Nós não compartilhamos seu e-mail.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="input-group-append">
+                            <a class="ml-3"><i class="fa fa-eye"></i></a>
+                        </div>
                     </div>
                 </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Permanecer logado</label>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary ml-auto" [routerLink]="['/private/home']">
+                        Entrar
+                    </button>
+                </div>
+            </form>
+            <div class="form-text text-muted text-center mt-5">
+                Ainda não possui uma conta? Então <a href="#">cadastre-se</a>.
             </div>
-            <div class="form-check mb-3">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Permanecer logado</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
-        </form>
-        <div class="form-text text-muted text-center">
-            Ainda não possui uma conta? Então <a href="#">cadastre-se</a>.
         </div>
     </div>
 </div>

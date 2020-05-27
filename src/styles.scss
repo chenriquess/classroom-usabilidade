@@ -2,3 +2,20 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.bookmark{
+  position: relative;
+  height: 45px;
+  width: 30px;
+  padding: 0px;
+  transform: rotate(0deg) skew(0deg);
+  border-left: 15px solid red;
+  border-right: 15px solid red;
+  border-bottom: 12px solid transparent;
+}
+
