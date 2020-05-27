@@ -9,23 +9,23 @@ export class SideMenuComponent implements OnInit {
   disciplinas: any = [
     {
       cor: '#17987a',
-      nome: 'lorem ipsum',
-      link: '/private/home'
+      nome: 'Usabilidade',
+      link: '/private/disciplinas/usabilidade'
     },
     {
       cor: '#6a00bd',
-      nome: 'lorem ipsum',
-      link: '/other'
+      nome: 'Sistemas de Informação',
+      link: '/private/disciplinas/sistemas-informacao'
     },
     {
       cor: '#1b03ff',
-      nome: 'lorem ipsum',
-      link: '/other'
+      nome: 'Testes',
+      link: '/private/disciplinas/dev-mobile'
     },
     {
       cor: '#bcbd00',
-      nome: 'lorem ipsum',
-      link: '/other'
+      nome: 'Mobile',
+      link: '/private/disciplinas/dev-web'
     },
   ];
 

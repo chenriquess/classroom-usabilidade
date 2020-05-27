@@ -6,20 +6,19 @@
     <div class="disciplinas">
         <ul>
             <li *ngFor="let disciplina of disciplinas">
-                <div class="hover-bg">
-                    <a [routerLink]="disciplina.link" routerLinkActive="active" class="align-middle"
-                       #currentLink="routerLinkActive">
-                        {{currentLink.isActive}}
+                <a [routerLink]="disciplina.link" routerLinkActive="active" class="align-middle"
+                   #currentLink="routerLinkActive">
+                    <div class="hover-bg">
                         <ng-container *ngIf="currentLink.isActive; else bookClosed">
                             <i class="fas fa-book-open mr-4" [style]="'color:' + disciplina.cor"></i>
                         </ng-container>
-                        <ng-container #bookClosed>
+                        <ng-template #bookClosed>
                             <i class="fa fa-book mr-4" [style]="'color:' + disciplina.cor"></i>
-                        </ng-container>
+                        </ng-template>
 
-                        <span class="disciplina-titulo align-top">{{disciplina.nome}}</span>
-                    </a>
-                </div>
+                        <span class="disciplina-titulo align-top" [title]="disciplina.nome">{{disciplina.nome}}</span>
+                    </div>
+                </a>
             </li>
         </ul>
     </div>
