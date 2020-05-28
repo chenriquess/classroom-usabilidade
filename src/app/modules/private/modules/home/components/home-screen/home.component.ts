@@ -10,24 +10,24 @@ export class HomeComponent implements OnInit {
     [
       {
         img: '../../../../../../../assets/images/cards/science_card.jpg',
-        titulo: 'Lorem Ipsum',
+        titulo: 'Usabilidade',
         cor: '#17987a'
       },
       {
         img: '../../../../../../../assets/images/cards/book_card.jpg',
-        titulo: 'Lorem Ipsum',
+        titulo: 'Sistemas de Informação',
         cor: '#6a00bd'
       }
     ],
     [
       {
         img: '../../../../../../../assets/images/cards/science_card.jpg',
-        titulo: 'Lorem Ipsum',
+        titulo: 'Testes',
         cor: '#1b03ff'
       },
       {
         img: '../../../../../../../assets/images/cards/book_card.jpg',
-        titulo: 'Lorem Ipsum',
+        titulo: 'Mobile',
         cor: '#bcbd00'
       }
     ]

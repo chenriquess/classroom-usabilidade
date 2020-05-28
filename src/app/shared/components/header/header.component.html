@@ -1,17 +1,29 @@
 <header>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
+        <div class="row align-items-center">
+            <div class="col brand-text">
                 Class Room
             </div>
 
             <div class="col">
-                <input type="text" class="form-control" placeholder="Buscar">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control busca" placeholder="Buscar" aria-label=""
+                           aria-describedby="basic-addon1">
+                </div>
             </div>
 
-            <div class="col float-right">
-                <i class="far fa-paper-plane"></i>
-                <i class="fa bell"></i>
+            <div class="col d-flex justify-content-end float-right">
+                <a href="" class="btn-header mr-5" title="Mensagens">
+                    <i class="far fa-paper-plane"></i>
+                </a>
+                <a href="" class="btn-header" title="Notificações">
+                    <i class="far fa-bell"></i>
+                </a>
             </div>
         </div>
     </div>
