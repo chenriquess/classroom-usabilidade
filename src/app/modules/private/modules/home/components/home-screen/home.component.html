@@ -1,6 +1,6 @@
 <app-container-padrao>
-    <div class="d-flex justify-content-around position-relative" *ngFor="let cardRow of cards">
-        <a href="" class="card" *ngFor="let card of cardRow">
+    <div class="d-flex justify-content-around position-relative" *ngFor="let cardRow of disciplinas">
+        <a [routerLink]="card.link" class="card" *ngFor="let card of cardRow">
 
             <div class="bookmark" [style]="getBookmarkColor(card.cor)"></div>
 

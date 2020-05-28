@@ -3,6 +3,16 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 *, *:before, *:after{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -18,4 +28,3 @@
   border-right: 15px solid red;
   border-bottom: 12px solid transparent;
 }
-

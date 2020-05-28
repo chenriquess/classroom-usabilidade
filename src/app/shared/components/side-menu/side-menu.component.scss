@@ -10,7 +10,6 @@
 
   &:hover {
     width: 250px;
-    position: absolute;
   }
 
   .brand {
@@ -52,7 +51,7 @@
           align-items: center;
         }
 
-        &:hover {
+        &:hover, a.active {
           .hover-bg {
             background-color: rgba(32, 33, 36, 0.039);
           }
@@ -81,4 +80,8 @@
       }
     }
   }
+}
+
+a {
+  text-decoration: none;
 }

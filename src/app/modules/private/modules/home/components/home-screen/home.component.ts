@@ -1,45 +1,41 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { disciplinas } from '../../../../../../shared/models/variables';
 
 @Component({
   selector: 'app-home-screen',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
-  cards = [
-    [
-      {
-        img: '../../../../../../../assets/images/cards/science_card.jpg',
-        titulo: 'Usabilidade',
-        cor: '#17987a'
-      },
-      {
-        img: '../../../../../../../assets/images/cards/book_card.jpg',
-        titulo: 'Sistemas de Informação',
-        cor: '#6a00bd'
-      }
-    ],
-    [
-      {
-        img: '../../../../../../../assets/images/cards/science_card.jpg',
-        titulo: 'Testes',
-        cor: '#1b03ff'
-      },
-      {
-        img: '../../../../../../../assets/images/cards/book_card.jpg',
-        titulo: 'Mobile',
-        cor: '#bcbd00'
-      }
-    ]
-  ];
+export class HomeComponent {
+  disciplinas;
 
   constructor() {
-  }
-
-  ngOnInit(): void {
+    this.disciplinas = this.getDisciplinas();
   }
 
   getBookmarkColor(cor: string) {
     return `border-right-color: ${ cor }; border-left-color: ${ cor }`;
+  }
+
+
+  getDisciplinas() {
+    const formated = [];
+    const lastIndex = disciplinas.length;
+    let subArr = [];
+    let counter = 1;
+
+    for (let i = 0; i < disciplinas.length; i++) {
+      if (counter <= 2) {
+        subArr.push(disciplinas[i]);
+        counter++;
+      }
+      if (counter > 2 || i === lastIndex - 1) {
+        formated.push(subArr);
+        subArr = [];
+        counter = 1;
+      }
+    }
+
+    return formated;
   }
 }

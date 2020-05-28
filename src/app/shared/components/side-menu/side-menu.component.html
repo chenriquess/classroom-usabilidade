@@ -1,17 +1,17 @@
 <div class="side-outter">
-    <div class="brand">
+    <a routerLink="/private/home" class="brand">
         <img class="logo mr-3" src="../../../../assets/images/logo-online-education-study.png"/>
         <span class="brand-text">
             Class Room
         </span>
-    </div>
+    </a>
 
     <div class="disciplinas">
         <ul>
             <li *ngFor="let disciplina of disciplinas">
                 <a [routerLink]="disciplina.link" routerLinkActive="active" class="align-middle"
                    #currentLink="routerLinkActive">
-                    <div class="hover-bg">
+                    <div class="hover-bg" routerLinkActive="active">
                         <ng-container *ngIf="currentLink.isActive; else bookClosed">
                             <i class="fas fa-book-open mr-4" [style]="'color:' + disciplina.cor"></i>
                         </ng-container>
@@ -19,7 +19,9 @@
                             <i class="fa fa-book mr-4" [style]="'color:' + disciplina.cor"></i>
                         </ng-template>
 
-                        <span class="disciplina-titulo align-top" [title]="disciplina.nome">{{disciplina.nome}}</span>
+                        <span class="disciplina-titulo align-top" [title]="disciplina.titulo">
+                            {{disciplina.titulo}}
+                        </span>
                     </div>
                 </a>
             </li>
