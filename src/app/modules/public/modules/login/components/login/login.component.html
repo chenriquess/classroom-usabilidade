@@ -10,11 +10,11 @@
             </div>
             <div class="fast-login">
                 <button class="loginBtn loginBtn--facebook">
-                    Login with Facebook
+                    Login com Facebook
                 </button>
 
                 <button class="loginBtn loginBtn--google">
-                    Login with Google
+                    Login com Google
                 </button>
             </div>
             <hr>
@@ -28,9 +28,11 @@
                     <label for="exampleInputPassword1">Senha</label>
 
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                        <div class="input-group-append">
-                            <a class="ml-3"><i class="fa fa-eye"></i></a>
+                        <input [type]="showPwd ? 'text' : 'password'" class="form-control" id="exampleInputPassword1">
+                        <div class="input-group-append align-items-center">
+                            <a class="ml-3 show-pwd" (click)="showPwd = !showPwd" [class.text-primary]="showPwd">
+                                <i class="fa fa-eye"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +48,7 @@
                 </div>
             </form>
             <div class="form-text text-muted text-center mt-5">
-                Ainda não possui uma conta? Então <a href="#">cadastre-se</a>.
+                Ainda não possui uma conta? Então <a href="#" class="text-primary">cadastre-se aqui</a>.
             </div>
         </div>
     </div>
