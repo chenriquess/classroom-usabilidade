@@ -1,0 +1,122 @@
+<div class="container">
+  <!-- Grid row -->
+  <div class="row px-lg-2 px-2">
+    <div class="col-md-6 col-xl-4 px-0">
+      <h6 class="font-weight-bold mb-3 text-center text-lg-left">Conversas</h6>
+      <ul class="list-unstyled friend-list">
+        <div class="friend-list" *ngFor="let friend of friendList">
+          <li class="card-conversa">
+            <a href="#" class="d-flex justify-content-between">
+              <img src="{{friend.photo}}" alt="avatar"
+                class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+              <div class="text-small">
+                <strong>{{friend.name}}</strong>
+                <p class="last-message text-muted">{{friend.message}}</p>
+              </div>
+              <div class="chat-footer">
+                <p class="text-smaller text-muted mb-0">{{friend.status}}</p>
+              </div>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="col-md-6 col-xl-8 pl-md-3 px-lg-auto px-0">
+      <div class="chat-message">
+        <div class="titulo-chat">
+          <h3>TURMA - USABILIDADE DE SISTEMAS DE INFORMAÇÃO</h3>
+        </div>
+        <ul class="list-unstyled chat">
+          <li class="d-flex justify-content-between mb-4 user-logado">
+            <img src="../../../../../../../assets/images/profile-pictures/no_picture.png" alt="avatar"
+              class="avatar rounded-circle d-flex align-self-start mr-2 z-depth-1">
+            <div class="chat-body white p-3 ml-2 z-depth-1">
+              <div class="header">
+                <strong class="primary-font">Aluno Logado</strong>
+              </div>
+              <hr class="w-100">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex justify-content-between mb-4">
+            <div class="chat-body white p-3 z-depth-1">
+              <div class="header">
+                <strong class="primary-font">Antônio Lucas</strong>
+              </div>
+              <hr class="w-100">
+              <p class="mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>
+            <img src="../../../../../../../assets/images/profile-pictures/no_picture.png" alt="avatar"
+              class="avatar rounded-circle d-flex align-self-start ml-2 z-depth-1">
+          </li>
+          <li class="d-flex justify-content-between mb-4">
+            <div class="chat-body white p-3 z-depth-1">
+              <div class="header">
+                <strong class="primary-font">José Mateus</strong>
+              </div>
+              <hr class="w-100">
+              <p class="mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>
+            <img src="../../../../../../../assets/images/profile-pictures/no_picture.png" alt="avatar"
+              class="avatar rounded-circle d-flex align-self-start ml-2 z-depth-1">
+          </li>
+          <li class="d-flex justify-content-between mb-4 pb-3 user-logado">
+            <img src="../../../../../../../assets/images/profile-pictures/no_picture.png" alt="avatar"
+              class="avatar rounded-circle d-flex align-self-start mr-2 z-depth-1">
+            <div class="chat-body white p-3 ml-2 z-depth-1">
+              <div class="header">
+                <strong class="primary-font">Aluno Logado</strong>
+              </div>
+              <hr class="w-100">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex justify-content-between mb-4">
+            <div class="chat-body white p-3 z-depth-1">
+              <div class="header">
+                <strong class="primary-font">Gabriel Toledo</strong>
+              </div>
+              <hr class="w-100">
+              <p class="mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>
+            <img src="../../../../../../../assets/images/profile-pictures/no_picture.png" alt="avatar"
+              class="avatar rounded-circle d-flex align-self-start ml-2 z-depth-1">
+          </li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <span class="white">
+                <div class="form-group basic-textarea">
+                  <textarea class="form-control pl-2 my-0" rows="3" placeholder="Digite uma mensagem..."></textarea>
+                </div>
+
+              </span>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-dark">
+                Enviar <i class="fas fa-paper-plane rotate"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>

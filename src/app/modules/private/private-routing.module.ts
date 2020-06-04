@@ -15,6 +15,10 @@ const routes: Routes = [
       {
         path: 'disciplina',
         loadChildren: () => import('./modules/disciplina/disciplina.module').then(m => m.DisciplinaModule)
+      },
+      {
+        path: 'chat',
+        loadChildren: () => import('./modules/chat/chat.module').then(m => m.ChatModule)
       }
     ]
   }
