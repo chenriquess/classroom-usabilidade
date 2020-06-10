@@ -21,9 +21,49 @@
                 <a routerLink="/private/chat" class="btn-header mr-5" title="Mensagens">
                     <i class="far fa-paper-plane"></i>
                 </a>
-                <a href="" class="btn-header" title="Notificações">
+                <a (click)="showNotify = !showNotify" class="btn-header" title="Notificações">
                     <i class="far fa-bell"></i>
                 </a>
+                <div class="notify card" *ngIf="showNotify">
+                    <div class="card-header text-center">
+                        Notificações
+
+                        <button type="button" (click)="showNotify = false" class="close float-right" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-3 img-notify">
+                                <img src="../../../../assets/images/profile-pictures/no_picture.png"/>
+                            </div>
+                            <div class="col">
+                                <span class="notify-title">Lorem ipsum dolor sit amet.</span>
+                                <p class="text-muted mb-0">
+                                    <i class="far fa-clock"></i>
+                                    2 horas atrás
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-3 img-notify">
+                                <img src="../../../../assets/images/profile-pictures/no_picture.png"/>
+                            </div>
+                            <div class="col">
+                                <span class="notify-title">Lorem ipsum dolor sit amet.</span>
+                                <p class="text-muted mb-0">
+                                    <i class="far fa-clock"></i>
+                                    2 horas atrás
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
