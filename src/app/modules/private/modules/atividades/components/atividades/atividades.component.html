@@ -1,3 +1,101 @@
 <app-container-padrao>
+  <div class="barra-atividades">
+    <div class="row">
+      <div class="col-3">
+      </div>
+      <div class="col-2">
+        <a href="#"><i class="far fa-address-book"></i>
+          <span class="style-atividades"> Seus trabalhos</span>
+        </a>
 
+      </div>
+      <div class="col-2">
+        <a href="#"><i class="far fa-calendar-alt"></i>
+          <span class="style-atividades"> Unifacisa Agenda</span>
+        </a>
+      </div>
+      <div class="col-2">
+        <a href="#"><i class="far fa-folder"></i>
+          <span class="style-atividades"> Pasta de atividades</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <h3>Atividades</h3>
+
+  <form>
+    <div class="form-row">
+      <div class="col-3">
+      </div>
+      <div class="col-6">
+        <input type="text" class="form-control" title="Campo para Filtrar" placeholder="Digite uma Disciplina">
+      </div>
+      <div class="col-2">
+        <button class="btn btn-success align-button" title="Botão para Filtrar"> <i class="fas fa-search"></i></button>
+        <button class="btn btn-primary" title="Adicionar nova atividade"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+  </form>
+
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col" title="Disciplina">Disciplina</th>
+        <th scope="col" title="Descrição">Descrição</th>
+        <th scope="col" title="Entrega">Entrega</th>
+        <th scope="col" title="Status">Status</th>
+      </tr>
+    </thead>
+    <tbody style="background-color: white;">
+      <tr>
+        <th class="linha-columns" scope="row" title="Nome da Disciplina">Testes de Software</th>
+        <td title="Descrição da Atividade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+          dolore magna aliqua.</td>
+        <td title="Data de Entrega">22/06/2020</td>
+        <td title="Status da Atividade"> <button class="btn btn-info btn-sm" disabled>Atribuída</button></td>
+      </tr>
+      <tr>
+        <th class="linha-columns" scope="row" title="Nome da Disciplina">Usabilidade de SI</th>
+        <td title="Descrição da Atividade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+          dolore magna aliqua.</td>
+        <td title="Data de Entrega">11/06/2020</td>
+        <td title="Status da Atividade"> <button class="btn btn-success btn-sm" disabled>Entregue</button></td>
+      </tr>
+      <tr>
+        <th class="linha-columns" scope="row" title="Nome da Disciplina">Sistemas de Informação</th>
+        <td title="Descrição da Atividade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+          dolore magna aliqua.</td>
+        <td title="Data de Entrega">10/06/2020</td>
+        <td title="Status da Atividade"> <button class="btn btn-warning btn-sm" disabled>Pendente</button></td>
+      </tr>
+      <tr>
+        <th class="linha-columns" scope="row" title="Nome da Disciplina">Desenvolvimento Mobile 1</th>
+        <td title="Descrição da Atividade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+          dolore magna aliqua.</td>
+        <td title="Data de Entrega">19/05/2020</td>
+        <td title="Status da Atividade"> <button class="btn btn-success btn-sm" disabled>Entregue</button></td>
+      </tr>
+      <tr>
+        <th class="linha-columns" scope="row" title="Nome da Disciplina">Desenvolvimento Mobile 2</th>
+        <td title="Descrição da Atividade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+          dolore magna aliqua.</td>
+        <td title="Data de Entrega">12/04/2020</td>
+        <td title="Status da Atividade"> <button class="btn btn-success btn-sm" disabled>Entregue</button></td>
+      </tr>
+      <tr>
+        <th class="linha-columns" scope="row" title="Nome da Disciplina">Desenvolvimento Mobile 3</th>
+        <td title="Descrição da Atividade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+          dolore magna aliqua.</td>
+        <td title="Data de Entrega">16/03/2020</td>
+        <td title="Status da Atividade"> <button class="btn btn-danger btn-sm" disabled>Não Entregue</button></td>
+      </tr>
+    </tbody>
+  </table>
 </app-container-padrao>
