@@ -24,7 +24,7 @@
 
         <div class="row mb-3">
             <div class="col">
-                <span>Atividade mais recente</span>
+                <span class="text-muted">Atividade mais recente</span>
             </div>
         </div>
 
@@ -52,7 +52,7 @@
                             <textarea class="compartilhar-text mb-2" rows="2"
                                       placeholder="Compartilhe algo com sua turma..."></textarea>
                             <div class="send">
-                                <a>
+                                <a (click)="compartilhadoSucesso()">
                                     <span class="mr-2">Enviar</span>
                                     <i class="fa fa-paper-plane"></i>
                                 </a>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="col">
                             <h6 class="m-0">Lorem Ipsum</h6>
-                            <p title="13:20 - 7 de abril de 2020">7 de Abril</p>
+                            <p class="text-muted post-date" title="13:20 - 7 de abril de 2020">7 de Abril</p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi beatae consequuntur
                                 cum

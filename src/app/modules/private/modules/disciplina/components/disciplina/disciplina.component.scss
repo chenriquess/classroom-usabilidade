@@ -9,7 +9,7 @@
 }
 
 .compartilhar-text {
-  border: none;
+  border: 1px solid #eaeaea;
   overflow: hidden;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -40,4 +40,8 @@
   transform: rotate(45deg);
   color: #4C69BA;
   font-size: 18px;
+}
+
+.post-date {
+  font-size: 11px;
 }
