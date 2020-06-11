@@ -1,0 +1,23 @@
+.card {
+
+  .card-header {
+    font-size: 16px;
+  }
+
+  .btn-follow {
+    font-size: large;
+  }
+
+  .card-body {
+    font-size: 15px;
+  }
+  .bookmark {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    border-left: 5px solid #17987a;
+    border-right: 5px solid #17987a;
+    border-bottom: 3px solid transparent;
+  }
+}
