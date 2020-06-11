@@ -31,7 +31,7 @@ export const disciplinas = [
     },
     {
       img: '../../../../../../../assets/images/cards/book_card.jpg',
-      titulo: 'Mobile 3',
+      titulo: 'Desenvolvimento Mobile 3',
       cor: '#a2ca67',
       link: '/private/disciplina/mobile3'
     }
