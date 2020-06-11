@@ -7,11 +7,17 @@
         <div class="friend-list" *ngFor="let friend of friendList">
           <li class="card-conversa">
             <a href="#" class="d-flex justify-content-between">
-              <img src="{{friend.photo}}" alt="avatar"
-                class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
-              <div class="text-small">
-                <strong>{{friend.name}}</strong>
-                <p class="last-message text-muted">{{friend.message}}</p>
+              <div class="row no-gutters">
+                <div class="col-3">
+                  <img src="{{friend.photo}}" alt="avatar"
+                    class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                </div>
+                <div class="col">
+                  <div class="text-small">
+                    <strong>{{friend.name}}</strong>
+                    <p class="last-message text-muted">{{friend.message}}</p>
+                  </div>
+                    </div>
               </div>
               <div class="chat-footer">
                 <p class="text-smaller text-muted mb-0">{{friend.status}}</p>
