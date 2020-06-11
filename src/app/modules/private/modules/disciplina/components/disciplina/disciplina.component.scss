@@ -1,0 +1,43 @@
+.link-voltar {
+  background: #fff;
+  padding: 12px;
+  border-radius: 13px;
+}
+
+.titulo-disciplina {
+  background: #fff;
+}
+
+.compartilhar-text {
+  border: none;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 73px;
+  width: 100%;
+}
+
+.send {
+  float: right;
+  background: #4c69ba24;
+  border-radius: 4px;
+  padding: 2px 11px;
+
+  span {
+    font-size: 16px;
+  }
+}
+
+.send:hover {
+  cursor: pointer;
+
+  .fa-paper-plane {
+    color: #5a7cd7;
+  }
+}
+
+.fa-paper-plane {
+  transform: rotate(45deg);
+  color: #4C69BA;
+  font-size: 18px;
+}
