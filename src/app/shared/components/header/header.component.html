@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <a routerLink="/private/home" class="col brand-text">
-                Class Room
+                <img src="../../../../assets/images/logo-unifacisa-sala-de-aula.png" alt="Logo Unifacisa Sala de Aula">
             </a>
 
             <div class="col">
@@ -18,9 +18,12 @@
             </div>
 
             <div class="col d-flex justify-content-end float-right">
-                <a routerLink="/private/chat" class="btn-header mr-5" title="Mensagens">
+                <a routerLink="/private/chat" class="btn-header mr-3" title="Mensagens">
                     <i class="far fa-paper-plane"></i>
                 </a>
+                <a routerLink="/private/atividades" class="btn-header mr-3" title="Atividades">
+                  <i class="fas fa-tasks"></i>
+              </a>
                 <a (click)="showNotify = !showNotify" class="btn-header" title="Notificações">
                     <i class="far fa-bell"></i>
                 </a>
