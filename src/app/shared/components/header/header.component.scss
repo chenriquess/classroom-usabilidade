@@ -32,3 +32,24 @@
   }
 }
 
+.notify {
+  background: #fff;
+  width: 380px;
+  position: absolute;
+  top: 42px;
+  right: 14px;
+  z-index: 99999;
+  box-shadow: 1px 1px 5px #ccc;
+
+  .close {
+    margin-top: -3px;
+  }
+
+  .fa-clock {
+    font-size: 14px;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
